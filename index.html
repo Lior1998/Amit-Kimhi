@@ -4,92 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>עמית קמחי - מורה לנהיגה מוסמך</title>
+    
+    <meta property="og:title" content="עמית קמחי - מורה לנהיגה מוסמך">
+    <meta property="og:description" content="לומדים לנהוג בביטחון, בסבלנות ובאווירה מקצועית. מלווה אתכם צעד אחר צעד עד לקבלת הרישיון!">
+    <meta property="og:image" content="https://lior1998.github.io/Amit-Kimhi/image_3.png">
+    <meta property="og:image:alt" content="עמית קמחי - מורה לנהיגה">
+    <meta property="og:url" content="https://lior1998.github.io/Amit-Kimhi/">
+    <meta property="og:type" content="website">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #111827;
+            background-color: #f0f9ff; /* רקע כחול בהיר נעים, כמו שמיים */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #f3f4f6;
-            display: block;
-            text-align: center;
+            color: #1e3a8a; /* צבע טקסט כחול כהה אלגנטי */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            direction: rtl;
         }
         .card-container {
+            width: 100%;
             max-width: 450px;
-            margin: 30px auto;
-            background: #1f2937;
+            background: #ffffff; /* רקע כרטיס לבן ונקי */
             border-radius: 20px;
-            padding: 30px 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            border: 1px solid #374151;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(10, 48, 107, 0.08); /* צל רך מאוד */
+            border: 1px solid #e2e8f0;
+            text-align: center;
         }
-        .profile-img {
-            width: 110px;
-            height: 110px;
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            background-color: #f97316;
-            margin: 0 auto 15px auto;
-            border: 4px solid #374151;
-            line-height: 110px;
-            font-size: 32px;
+            background-color: #ffffff;
+            margin: 0 auto 20px auto;
+            border: 6px solid #f0f9ff; /* מסגרת דקה בהירה */
+            box-shadow: 0 4px 15px rgba(10, 48, 107, 0.1);
+            overflow: hidden;
+        }
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* חיתוך התמונה למילוי העיגול */
+            border-radius: 50%;
         }
         h1 {
-            font-size: 24px;
-            margin: 10px 0 5px 0;
-            color: #ffffff;
+            font-size: 28px;
+            margin: 10px 0;
+            color: #1e3a8a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .lamed-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: transparent; /* הסר רקע כתום ישן */
+            margin: 0 8px;
+            border-radius: 50%;
+            overflow: hidden; /* וודא שהתמונה ממלאת את העיגול */
+            border: none;
+        }
+        .lamed-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* חיתוך התמונה למילוי העיגול */
         }
         .subtitle {
-            font-size: 16px;
-            color: #f97316;
+            font-size: 18px;
+            color: #f97316; /* צבע מבטא כתום לתואר */
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             letter-spacing: 0.5px;
         }
         .tagline {
-            font-size: 14px;
-            color: #9ca3af;
-            margin-bottom: 25px;
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 35px;
             padding: 0 15px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .btn {
             display: block;
             background: #2563eb;
             color: white;
-            padding: 14px;
-            margin: 12px 0;
+            padding: 16px;
+            margin: 15px 0;
             border-radius: 12px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 16px;
-            transition: background 0.3s;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
             border: none;
             cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
         }
         .btn-whatsapp {
-            background: #16a34a;
+            background: #16a34a; /* ירוק ווטסאפ */
         }
         .btn-call {
-            background: #f97316;
+            background: #f97316; /* כתום שיחה */
         }
         .footer-text {
-            font-size: 11px;
-            color: #6b7280;
-            margin-top: 25px;
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
     <div class="card-container">
-        <div class="profile-img">🚗</div>
-        <h1>עמית קמחי</h1>
+        <div class="profile-img-container">
+            <img src="https://lior1998.github.io/Amit-Kimhi/image_3.png" alt="תמונת הפרופיל של עמית קמחי">
+        </div>
+        
+        <h1>
+            <span class="lamed-icon"><img src="https://lior1998.github.io/Amit-Kimhi/image_4.png" alt="לוגו מורה נהיגה למידה"></span>
+            עמית קמחי
+            <span class="lamed-icon"><img src="https://lior1998.github.io/Amit-Kimhi/image_4.png" alt="לוגו מורה נהיגה למידה"></span>
+        </h1>
+        
         <div class="subtitle">מורה לנהיגה מוסמך</div>
         
         <p class="tagline">לומדים לנהוג בביטחון, בסבלנות ובאווירה מקצועית. מלווה אתכם צעד אחר צעד עד לקבלת הרישיון וההגה בידיים שלכם!</p>
         
         <a href="tel:0508510328" class="btn btn-call">📞 התקשרו עכשיו: 050-8510328</a>
-        <a href="https://wa.me/972508510328?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A2%D7%9E%D7%99%D7%AA%D7%9C%D7%95%D7%9E%D7%93%20%D7%A0%D7%94%D7%99%D7%92%D7%94" class="btn btn-whatsapp">💬 שלחו הודעה ב-WhatsApp</a>
+        <a href="https://wa.me/972508510328?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A2%D7%9E%D7%99%D7%AA%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%20%D7%A0%D7%94%D7%99%D7%92%D7%94" class="btn btn-whatsapp">💬 שלחו הודעה ב-WhatsApp</a>
         
         <div class="footer-text">© עמית קמחי - מורה לנהיגה | סעו בזהירות</div>
     </div>
